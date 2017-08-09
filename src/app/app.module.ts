@@ -17,7 +17,10 @@ import { TabGroupComponent } from './tab-group/tab-group.component';
     TabGroupComponent
   ],
   imports: [
-    BrowserModule,
+    // Add .withServerTransition() to support Universal rendering.
+    // The application ID can be any identifier which is unique on
+    // the page.
+    BrowserModule.withServerTransition({appId: 'venteicher-org'}),
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
