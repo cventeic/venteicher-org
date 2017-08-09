@@ -6,12 +6,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { MenuComponent } from './menu/menu.component';
+import { TabGroupComponent } from './tab-group/tab-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    MenuComponent
+    MenuComponent,
+    TabGroupComponent
   ],
   imports: [
     BrowserModule,
