@@ -8,9 +8,9 @@
       </div>
     </ng-template>
     <div fxLayoutWrap>
-      <!--
-      <div *ngFor="let card of cards"> <v-card[card] = "card"> </v-card> </div>
-      -->
+      <div *ngFor="let card of cards" >
+        <app-card [contents]="card.contents" [tags]="card.tags" ></app-card>
+      </div>
     </div>
   </md-tab>
 
@@ -24,13 +24,11 @@
     </ng-template>
 
     <div fxLayoutWrap>
-      <!--
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('person')">
-          <v-card[card] = "card"> </v-card>
+          <app-card [contents]="card.contents" [tags]="card.tags" ></app-card>
         </div>
       </div>
-      -->
     </div>
   </md-tab>
 
@@ -43,13 +41,11 @@
     </ng-template>
 
     <div fxLayoutWrap>
-      <!--
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('project')">
-          <v-card[card] = "card"> </v-card>
+          <app-card [contents]="card.contents" [tags]="card.tags" ></app-card>
         </div>
       </div>
-      -->
     </div>
 
   </md-tab>
@@ -63,13 +59,11 @@
     </ng-template>
 
     <div fxLayoutWrap>
-      <!--
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('examples')">
-          <v-card[card] = "card"> </v-card>
+          <app-card [contents]="card.contents" [tags]="card.tags" ></app-card>
         </div>
       </div>
-      -->
     </div>
   </md-tab>
 
@@ -82,16 +76,13 @@
     </ng-template>
 
     <div fxLayoutWrap>
-      <!--
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('site')">
-          <v-card[card] = "card"> </v-card>
+          <app-card [contents]="card.contents" [tags]="card.tags" ></app-card>
         </div>
       </div>
-      -->
     </div>
 
   </md-tab>
 
 </md-tab-group>
-<

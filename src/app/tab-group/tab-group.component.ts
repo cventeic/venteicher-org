@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Card } from '../card';
 
 @Component({
   selector: 'app-tab-group',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab-group.component.css']
 })
 export class TabGroupComponent implements OnInit {
+  @Input() cards: Array<Card>;
 
   constructor() { }
 

@@ -1,3 +1,19 @@
-<p>
-  card works!
-</p>
+<md-card class="card">
+  <md-card-header>
+
+    <div *ngIf="tags.includes('avatar')" md-card-avatar class="card-chris-venteicher-header-image"></div>
+
+    <div *ngFor="let content of contents;let i = index" >
+      <md-card-title    *ngIf="i==0"><h1>{{content}}</h1></md-card-title>
+      <md-card-subtitle *ngIf="i>0"><span>{{content}}</span></md-card-subtitle>
+    </div>
+  </md-card-header>
+
+  <md-card-content>
+    <div [innerHTML]="contents"></div>
+  </md-card-content>
+
+</md-card>
+
+
+

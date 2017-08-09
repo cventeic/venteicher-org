@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card } from './card';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  cards: Array<Card>;
+
+  constructor (){
+
+    this.cards = [
+      new Card({
+        contents: [ "Chris Venteicher",
+          "Software Engineer, Developer of Venteicher.org",
+          "<h1>hello world</h1>"
+        ],
+        tags: [ 'person' ]
+      })
+    ]
+  }
 }
