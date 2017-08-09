@@ -1,3 +1,97 @@
-<p>
-  tab-group works!
-</p>
+<md-tab-group class="tab-group">
+
+  <md-tab>
+    <ng-template md-tab-label>
+      <div fxLayout="row" fxLayoutAlign="center center" class="tab-group-h1">
+        <md-icon>play_circle_outline</md-icon>
+        <span class="tab-group-spacer" >Everything</span>
+      </div>
+    </ng-template>
+    <div fxLayoutWrap>
+      <!--
+      <div *ngFor="let card of cards"> <v-card[card] = "card"> </v-card> </div>
+      -->
+    </div>
+  </md-tab>
+
+
+  <md-tab>
+    <ng-template md-tab-label>
+      <div fxLayout="row" fxLayoutAlign="center center" class="tab-group-h1">
+        <md-icon>person</md-icon>
+        <span class="tab-group-spacer" >People</span>
+      </div>
+    </ng-template>
+
+    <div fxLayoutWrap>
+      <!--
+      <div *ngFor="let card of cards">
+        <div *ngIf="card.tags.includes('person')">
+          <v-card[card] = "card"> </v-card>
+        </div>
+      </div>
+      -->
+    </div>
+  </md-tab>
+
+  <md-tab>
+    <ng-template md-tab-label>
+      <div fxLayout="row" fxLayoutAlign="center center" class="tab-group-h1">
+        <md-icon>attachment</md-icon>
+        <span class="tab-group-spacer">Projects</span>
+      </div>
+    </ng-template>
+
+    <div fxLayoutWrap>
+      <!--
+      <div *ngFor="let card of cards">
+        <div *ngIf="card.tags.includes('project')">
+          <v-card[card] = "card"> </v-card>
+        </div>
+      </div>
+      -->
+    </div>
+
+  </md-tab>
+
+  <md-tab>
+    <ng-template md-tab-label>
+      <div fxLayout="row" fxLayoutAlign="center center" class="tab-group-h1">
+        <md-icon>trending_up</md-icon>
+        <span class="tab-group-spacer">Examples</span>
+      </div>
+    </ng-template>
+
+    <div fxLayoutWrap>
+      <!--
+      <div *ngFor="let card of cards">
+        <div *ngIf="card.tags.includes('examples')">
+          <v-card[card] = "card"> </v-card>
+        </div>
+      </div>
+      -->
+    </div>
+  </md-tab>
+
+  <md-tab>
+    <ng-template md-tab-label>
+      <div fxLayout="row" fxLayoutAlign="center center" class="tab-group-h1">
+        <md-icon>web</md-icon>
+        <span class="tab-group-spacer">Site Info</span>
+      </div>
+    </ng-template>
+
+    <div fxLayoutWrap>
+      <!--
+      <div *ngFor="let card of cards">
+        <div *ngIf="card.tags.includes('site')">
+          <v-card[card] = "card"> </v-card>
+        </div>
+      </div>
+      -->
+    </div>
+
+  </md-tab>
+
+</md-tab-group>
+<
