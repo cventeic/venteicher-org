@@ -9,12 +9,15 @@ import { CardComponent } from './card/card.component';
 import { MenuComponent } from './menu/menu.component';
 import { TabGroupComponent } from './tab-group/tab-group.component';
 
+import { SafeHtmlPipe } from './safe-html.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     MenuComponent,
-    TabGroupComponent
+    TabGroupComponent,
+    SafeHtmlPipe
   ],
   imports: [
     // Add .withServerTransition() to support Universal rendering.
