@@ -48,6 +48,25 @@ export class AppComponent {
         tags: [ 'person' ]
       }),
 
+      new Card({
+        headers: [
+          new Header({
+            tags: [],
+            avatarUrls: [ imgUri ],
+            titles: [
+              "<h1>Venteicher.org Web Site<h1>",
+              "<h2>Tools and Components<h2>",
+             ],
+          }),
+        ],
+        contents: [
+          `
+          `
+        ],
+        tags: [ 'project', 'site' ]
+      }),
+
+
     ]
   }
 }
