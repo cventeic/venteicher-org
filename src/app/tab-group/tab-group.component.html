@@ -27,7 +27,6 @@
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('person')">
           <app-card [headers]="card.headers" [contents]="card.contents" [tags]="card.tags" ></app-card>
-          <app-card  [contents]="card.contents" [tags]="card.tags" ></app-card>
         </div>
       </div>
     </div>
