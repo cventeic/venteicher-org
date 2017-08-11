@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 
 import { Card } from './card';
+import { Header } from './header';
+
+import imgUri from './images/ChrisProfilePicture.jpg';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +19,15 @@ export class AppComponent {
     this.cards = [
 
       new Card({
-        titles: [
-          `<h1>Chris Venteicher</h1>`,
-          `<h2>Software Engineer, Developer of Venteicher.org</h2>`,
+        headers: [
+          new Header({
+            tags: [],
+            avatarUrls: [ imgUri ],
+            titles: [
+              `<h1>Chris Venteicher</h1>`,
+              `<h2>Software Engineer, Developer of Venteicher.org</h2>`,
+            ],
+          }),
         ],
         contents: [
           `

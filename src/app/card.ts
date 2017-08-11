@@ -1,6 +1,7 @@
+import { Header } from './header';
+
 export class Card {
-  //public titles: Array<string> = [];
-  public titles: Array<any> = [];
+  public headers: Array<Header>;
   public contents: Array<string> = [];
   public tags: Array<string> = [];
 

@@ -7,8 +7,6 @@
 }
 
 .card-chris-venteicher-header-image {
-  background-image: url('ChrisProfilePicture.jpg');
-  //background-size: auto;
   background-size: cover;
   background-position: center
 }

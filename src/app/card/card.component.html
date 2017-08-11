@@ -1,18 +1,21 @@
 <md-card class="card">
-  <md-card-header>
+  <div *ngFor="let header of headers" >
 
-    <div *ngIf="tags.includes('avatar')" md-card-avatar class="card-chris-venteicher-header-image"></div>
+    <md-card-header>
 
-    <div *ngFor="let title of titles;let i = index" >
-      <md-card-title    *ngIf="i==0" [innerHTML]="title | safeHtml"></md-card-title>
-      <!--<md-card-subtitle *ngIf="i>0"  [innerHTML]="title | safeHtml"></md-card-subtitle>-->
-    </div>
-  </md-card-header>
+      <div *ngFor="let avatarUrl of header.avatarUrls" >
+        <img md-card-avatar [src]="avatarUrl">
+      </div>
+
+      <div *ngFor="let title of header.titles;let i = index" >
+        <md-card-title *ngIf="i==0"  [innerHTML]="title | safeHtml"></md-card-title>
+        <md-card-subtitle *ngIf="i>0"  [innerHTML]="title | safeHtml"></md-card-subtitle>
+      </div>
+    </md-card-header>
+
+  </div>
 
   <md-card-content>
-    <ngContent>
-      {{test_string}}
-    </ngContent>
     <div [innerHTML]="contents"></div>
   </md-card-content>
 
