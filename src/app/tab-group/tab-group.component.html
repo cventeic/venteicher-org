@@ -9,7 +9,8 @@
     </ng-template>
     <div fxLayoutWrap>
       <div *ngFor="let card of cards" >
-        <app-card [headers]="card.headers" [contents]="card.contents" [tags]="card.tags" ></app-card>
+        <app-card [headers]="card.headers" [contents]="card.contents"
+            [hyperlinks]="card.hyperlinks" [tags]="card.tags" ></app-card>
       </div>
     </div>
   </md-tab>
@@ -26,7 +27,8 @@
     <div fxLayoutWrap>
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('person')">
-          <app-card [headers]="card.headers" [contents]="card.contents" [tags]="card.tags" ></app-card>
+          <app-card [headers]="card.headers" [contents]="card.contents"
+              [hyperlinks]="card.hyperlinks" [tags]="card.tags" ></app-card>
         </div>
       </div>
     </div>
@@ -43,7 +45,8 @@
     <div fxLayoutWrap>
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('project')">
-          <app-card [headers]="card.headers" [contents]="card.contents" [tags]="card.tags" ></app-card>
+          <app-card [headers]="card.headers" [contents]="card.contents"
+              [hyperlinks]="card.hyperlinks" [tags]="card.tags" ></app-card>
         </div>
       </div>
     </div>
@@ -61,7 +64,8 @@
     <div fxLayoutWrap>
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('examples')">
-          <app-card [headers]="card.headers" [contents]="card.contents" [tags]="card.tags" ></app-card>
+          <app-card [headers]="card.headers" [contents]="card.contents"
+              [hyperlinks]="card.hyperlinks" [tags]="card.tags" ></app-card>
         </div>
       </div>
     </div>
@@ -78,7 +82,8 @@
     <div fxLayoutWrap>
       <div *ngFor="let card of cards">
         <div *ngIf="card.tags.includes('site')">
-          <app-card [headers]="card.headers" [contents]="card.contents" [tags]="card.tags" ></app-card>
+          <app-card [headers]="card.headers" [contents]="card.contents"
+              [hyperlinks]="card.hyperlinks" [tags]="card.tags" ></app-card>
         </div>
       </div>
     </div>

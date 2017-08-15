@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { Card } from './card';
 import { Header } from './header';
+import { Hyperlink } from './hyperlink';
 
 import imgUri from './images/ChrisProfilePicture.jpg';
 
@@ -15,10 +16,38 @@ export class AppComponent {
   cards: Array<Card>;
 
   constructor (){
+    console.log("app.component.ts constructor");
 
     this.cards = [
 
       new Card({
+        hyperlinks: [
+          new Hyperlink({
+            href:"https://github.com/cventeic",
+            icons:["github-circle"],
+            texts:["GitHub"]
+          }),
+
+          new Hyperlink({
+            href:"https://linkedin.com/in/chris-venteicher",
+            icons:["linkedin-box"],
+            texts:["LinkedIn"]
+          }),
+
+          new Hyperlink({
+            href: "tel:262 607 2040",
+            icons:["phone"],
+            texts:["Phone: 262 607 2040"]
+          }),
+
+          new Hyperlink({
+            href: "email:chris@venteicher.org",
+            icons:["email"],
+            texts:["Email: chris@venteicher.org"]
+          }),
+
+        ],
+
         headers: [
           new Header({
             tags: [],
@@ -43,6 +72,7 @@ export class AppComponent {
               <li> Linux (Ubuntu, Kernel, Network Drivers, Performance Tools)</li>
               <li> Video Compression, 3D Graphics</li>
             </ul>
+
            `
         ],
         tags: [ 'person' ]
@@ -63,7 +93,55 @@ export class AppComponent {
           `
           `
         ],
-        tags: [ 'project', 'site' ]
+        tags: [ 'project', 'site' ],
+
+        hyperlinks: [
+          new Hyperlink({
+            href: "https://angular.io",
+            icons:["angular"],
+            texts:["Angular.io (v4)"]
+          }),
+
+          new Hyperlink({
+            href: "https://material.angular.io",
+            icons:["angular-material"],
+            texts:["Angular Material"]
+          }),
+
+          new Hyperlink({
+            href: "https://kubernetes.io",
+            icons:["kubernetes"],
+            texts:["Kubernetes"]
+          }),
+
+          new Hyperlink({
+            href: "https://cloud.google.com/container-engine",
+            icons:["google-container-engine"],
+            texts:["Google Container Engine"]
+          }),
+
+          new Hyperlink({
+            href: "https://www.phusionpassenger.com",
+            icons:["passenger"],
+            texts:["Passenger"]
+          }),
+
+          new Hyperlink({
+            href: "https://www.docker.com",
+            icons:["docker"],
+            texts:["Docker"]
+          }),
+
+          new Hyperlink({
+            href: "https://lwn.net/Kernel",
+            icons:["linux"],
+            texts:["Linux"]
+          }),
+
+
+        ],
+
+
       }),
 
 

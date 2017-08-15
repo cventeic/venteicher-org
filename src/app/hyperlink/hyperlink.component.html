@@ -1,0 +1,13 @@
+<a [href]='hyperlink.href' md-button >
+
+  <div fxLayout fxLayoutAlign="space-between center">
+      <ng-container *ngFor="let icon of hyperlink.icons" >
+        <md-icon  [svgIcon]="icon" >  </md-icon>
+        <!--<md-icon *ngIf="action.options.includes('angular_icon')">{{action.icon}}</md-icon>-->
+        <span class="spacer"></span>
+      </ng-container>
+      <ng-container *ngFor="let text of hyperlink.texts" >
+        {{text}}
+      </ng-container>
+    </div>
+</a>

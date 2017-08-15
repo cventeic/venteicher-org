@@ -3,21 +3,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { IconComponent } from './icon/icon.component';
 import { CardComponent } from './card/card.component';
 import { MenuComponent } from './menu/menu.component';
 import { TabGroupComponent } from './tab-group/tab-group.component';
-
-import { SafeHtmlPipe } from './safe-html.pipe';
+import { HyperlinkComponent } from './hyperlink/hyperlink.component';
 
 @NgModule({
   declarations: [
+    IconComponent,
     AppComponent,
     CardComponent,
     MenuComponent,
     TabGroupComponent,
-    SafeHtmlPipe
+    HyperlinkComponent,
   ],
   imports: [
     // Add .withServerTransition() to support Universal rendering.
@@ -27,6 +29,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
