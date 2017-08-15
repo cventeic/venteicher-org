@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -28,7 +28,7 @@ import { HyperlinkComponent } from './hyperlink/hyperlink.component';
     BrowserModule.withServerTransition({appId: 'venteicher-org'}),
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule,
+    //    FlexLayoutModule,
     HttpModule,
   ],
   providers: [],
