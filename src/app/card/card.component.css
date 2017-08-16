@@ -1,0 +1,14 @@
+
+// Cards
+.card {
+  width: 420px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card-chris-venteicher-header-image {
+  background-size: cover;
+  background-position: center
+}
+
+

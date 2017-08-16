@@ -1,0 +1,107 @@
+<md-card class="card">
+  <div *ngFor="let header of headers" >
+
+    <md-card-header>
+
+      <div *ngFor="let avatarUrl of header.avatarUrls" >
+        <img md-card-avatar [src]="avatarUrl">
+      </div>
+
+      <div *ngFor="let title of header.titles;let i = index" >
+        <md-card-title *ngIf="i==0"  [innerHTML]="title"></md-card-title>
+        <md-card-subtitle *ngIf="i>0"  [innerHTML]="title"></md-card-subtitle>
+      </div>
+    </md-card-header>
+
+  </div>
+
+  <md-card-content>
+    <div [innerHTML]="contents"></div>
+
+    <ng-container *ngFor="let hyperlink of hyperlinks">
+      <app-hyperlink [hyperlink]='hyperlink'></app-hyperlink>
+    </ng-container>
+
+<!--
+<a href="https://github.com/cventeic" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <md-icon svgIcon='github-circle'>github-circle</md-icon>
+      <md-icon>github-circle</md-icon>
+      GitHub
+    </div>
+</a>
+
+
+<a href="https://linkedin.com/in/chris-venteicher" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <md-icon [svgIcon]='linkedin-box'>linkedin-box</md-icon>
+      LinkedIn
+    </div>
+</a>
+
+
+<a href="tel:262 607 2040" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <md-icon>phone</md-icon>
+      Phone 262 607 2040
+    </div>
+</a>
+
+
+<a href="email:chris@venteicher.org" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <md-icon>email</md-icon>
+       Email: chris@venteicher.org
+    </div>
+</a>
+
+
+<a href="https:angular.io" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <img src="https://png.icons8.com/search">
+        angular.io (v4)
+    </div>
+</a>
+
+
+<a href="https://material.angular.io" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <img src="https://png.icons8.com/search">
+        angular material (v2)
+    </div>
+</a>
+
+
+<a href="https://kubernetes.io" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <img src="https://png.icons8.com/search">
+        kubernetes
+    </div>
+</a>
+
+
+<a href="https://cloud.google.com/container-engine" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <img src="https://png.icons8.com/search">
+        google container engine
+    </div>
+</a>
+
+
+<a href="https://www.phusionpassenger.com" md-button >
+    <div fxLayout fxLayoutAlign="center center">
+      <img src="https://png.icons8.com/search">
+        passenger
+    </div>
+</a>
+
+-->
+
+
+
+  </md-card-content>
+
+</md-card>
+
+
+
