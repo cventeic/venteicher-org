@@ -9,6 +9,12 @@ const ngUniversal = require('@nguniversal/express-engine');
 /* The server bundle is loaded here, it's why you don't want a changing hash in it */
 const appServer = require('./dist-server/main.bundle');
 
+// Activate Google Cloud Trace and Debug when in production
+if (process.env.NODE_ENV === 'production') {
+  require('@google-cloud/trace-agent').start();
+  require('@google-cloud/debug-agent').start();
+}
+
 // *** Setup Express  / Express View ***
 
 const app = express();
@@ -53,6 +59,12 @@ function angularRouter(req, res) {
 // Routes:
 
 app.get('/', angularRouter);
+
+// Our application will need to respond to health checks when running on
+// Compute Engine with Managed Instance Groups.
+app.get('/_ah/health', (req, res) => {
+  res.status(200).send('ok');
+});
 
 
 // Serve static files
