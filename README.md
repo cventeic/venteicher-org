@@ -3,9 +3,21 @@ Personal web site
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
+## Start universal server (server side rendering for 1 sec (apx) loading of page)
+
+git clone https://github.com/cventeic/venteicher-org
+
+cd venteicher-org
+yarn install
+yarn run build_all  `Build both normal content (dist) and universal server content (dist-server)`
+node server.js
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+
 
 ## Code scaffolding
 
