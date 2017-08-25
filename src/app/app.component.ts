@@ -79,6 +79,9 @@ export class AppComponent {
         tags: [ 'person' ]
       }),
 
+
+
+
       new Card({
         headers: [
           new Header({
@@ -175,6 +178,46 @@ export class AppComponent {
 
 
       }),
+
+
+
+
+      new Card({
+        headers: [
+          new Header({
+            tags: [],
+            avatarUrls: [ imgUri ],
+            titles: [
+              "3D Printer",
+              "Custom Designed and Built 3D Printer",
+             ],
+          }),
+        ],
+        contents: [
+          `
+          The 3D printer was built using:
+          <ul>
+            <li> v-slot linear rails from openbuilds (20mm x 20mm and 20mm x 80mm rails) </li>
+            <li> Ramps 1.4 (arduino) electronics </li>
+            <li> Marlin software on the Ramps </li>
+          </ul>
+
+          The Printing process uses:
+          <ul>
+            <li> Octoprint for remote control </li>
+            <li> Cura for slicing </li>
+          </ul>
+        `
+        ],
+        tags: [ 'project'],
+
+        hyperlinks: [
+
+        ],
+
+      }),
+
+
 
 
     ]
