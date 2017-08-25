@@ -25,13 +25,13 @@ export class AppComponent {
           new Hyperlink({
             href:"https://github.com/cventeic",
             icons:["github-circle"],
-            texts:["GitHub"]
+            texts:["GitHub- All Repos"]
           }),
 
           new Hyperlink({
             href:"https://linkedin.com/in/chris-venteicher",
             icons:["linkedin-box"],
-            texts:["LinkedIn"]
+            texts:["LinkedIn- Chris V"]
           }),
 
           new Hyperlink({
@@ -53,8 +53,8 @@ export class AppComponent {
             tags: [],
             avatarUrls: [ imgUri ],
             titles: [
-              `<h1>Chris Venteicher</h1>`,
-              `<h2>Software Engineer, Developer of Venteicher.org</h2>`,
+              `Chris Venteicher`,
+              `Software Engineer, Developer of Venteicher.org`,
             ],
           }),
         ],
@@ -65,12 +65,13 @@ export class AppComponent {
             </p>
             I have the most interest and experience in:
             <ul>
+              <li> C, C++, Ruby </li>
               <li> Machine Learning (Genetic Algorithms, Neural Nets, Markov Models, Agent Systems) </li>
-              <li> Web Technologies (d3.js, Rails, Javascript, Angular) </li>
-              <li> Cellular (Android, Modems 3GPP, 4G)</li>
+              <li> Web Technologies (d3.js, Rails, Angular4, Kubernetes) </li>
+              <li> Cellular (Android, Modems 3GPP, 4G/LTE)</li>
               <li> Networking (IPv4, IPv6, Proxy Mobile IP, PPP, DHCP, VPN, WiFi, VoIP/SIP)</li>
               <li> Linux (Ubuntu, Kernel, Network Drivers, Performance Tools)</li>
-              <li> Video Compression, 3D Graphics</li>
+              <li> Video Compression, 3D Graphics / OpenGL </li>
             </ul>
 
            `
@@ -84,18 +85,49 @@ export class AppComponent {
             tags: [],
             avatarUrls: [ imgUri ],
             titles: [
-              "<h1>Venteicher.org Web Site<h1>",
-              "<h2>Tools and Components<h2>",
+              "Venteicher.org Web Site",
+              "WebSite Construction and Cloud Deployment",
              ],
           }),
         ],
         contents: [
           `
-          `
+        This web site is constructed using:
+        <ul>
+          <li> Angular 4 </li>
+          <li> Angular Material 2 </li>
+          <li> Angular Universal (Server Side rendering to speed up initial page loading)</li>
+        </ul>
+
+        This web site hosted and served using:
+        <ul>
+          <li> Phusion Passenger + Nginx + Node.js to serve content. </li>
+          <li> Google Container Engine + Kubernetes for Hosting / Compute. </li>
+        </ul>
+
+        <p>
+          Rails 5 was originally used to serve content.
+          However I did not succeed in supporting Angular Universal with Rails 5 + Webpacker.
+          In the future I plan to re-integrate Rails 5 to provide backend database services.
+        </p>
+  `
         ],
         tags: [ 'project', 'site' ],
 
         hyperlinks: [
+          new Hyperlink({
+            href:"https://github.com/cventeic",
+            icons:["github-circle"],
+            texts:["GitHub- Site Content"]
+          }),
+
+          new Hyperlink({
+            href:"https://github.com/cventeic",
+            icons:["github-circle"],
+            texts:["GitHub- Google Container / Kubernetes Deployment Scripts"]
+          }),
+
+
           new Hyperlink({
             href: "https://angular.io",
             icons:["angular"],
