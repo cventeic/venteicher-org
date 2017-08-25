@@ -1,14 +1,38 @@
 
-// Cards
 .card {
   width: 420px;
   padding: 20px;
   margin: 20px;
 }
 
-.card-chris-venteicher-header-image {
-  background-size: cover;
-  background-position: center
+.title {
 }
 
+.subtitle {
+}
+
+.thumbnail_removed_parts {
+  width: 200px;
+  height: 200px;
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
 
