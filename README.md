@@ -1,6 +1,13 @@
 # venteicher-org
 Personal web site
 
+This web site is constructed using:
+
+- Angular 4
+- Angular Material 2
+- Angular Universal (Server Side rendering to speed up initial page loading)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
 ## Start universal server (server side rendering for 1 sec (apx) loading of page)
@@ -15,8 +22,6 @@ node server.js
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-
 
 
 ## Code scaffolding
