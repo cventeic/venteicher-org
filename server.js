@@ -11,7 +11,7 @@ const appServer = require('./dist-server/main.bundle');
 
 // Activate Google Cloud Trace and Debug when in production
 if (process.env.NODE_ENV === 'production') {
-  require('@google-cloud/trace-agent').start();
+  //require('@google-cloud/trace-agent').start();  // Google stack trace
   require('@google-cloud/debug-agent').start();
 }
 
