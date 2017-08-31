@@ -219,6 +219,46 @@ export class AppComponent {
 
 
 
+      new Card({
+        headers: [
+          new Header({
+            tags: [],
+            avatarUrls: [ imgUri ],
+            titles: [
+              "Interactive 3D Graphics via Ruby",
+              "OpenGL 3D Graphics in Ruby Language"
+             ],
+          }),
+        ],
+        contents: [
+          `
+            OpenGL 3D graphics written in Ruby
+
+            <ul>
+              <li> Programatic shaders with diffuse and specular lighting. </li>
+              <li> Arcball and Quaterion implemented in Ruby code. </li>
+              <li> Basic shape rendering in Ruby code. </li>
+              <li> Buffer management in Ruby. </li>
+            </ul>
+
+            <a href="https://www.youtube.com/watch?v=_8pJCWOsiIo"> Video </a>
+
+ `
+        ],
+        tags: [ 'project' ],
+
+        hyperlinks: [
+          new Hyperlink({
+            href:"https://github.com/cventeic/opengl-ruby",
+            icons:["github-circle"],
+            texts:["GitHub- opengl-ruby code "]
+          }),
+
+        ],
+
+      }),
+
+
 
     ]
   }
