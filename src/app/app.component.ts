@@ -21,6 +21,7 @@ export class AppComponent {
     this.cards = [
 
       new Card({
+        images: [imgUri],
         hyperlinks: [
           new Hyperlink({
             href:"https://github.com/cventeic",
@@ -58,6 +59,7 @@ export class AppComponent {
             ],
           }),
         ],
+
         contents: [
           `
             <p>
@@ -83,6 +85,7 @@ export class AppComponent {
 
 
       new Card({
+        images: [],
         headers: [
           new Header({
             tags: [],

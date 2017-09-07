@@ -6,6 +6,7 @@ export class Card {
   public contents: Array<string> = [];
   public tags: Array<string> = [];
   public hyperlinks: Array<Hyperlink> = [];
+  public images: Array<string> = [];
 
   public constructor(init?:Partial<Card>){
     Object.assign(this, init);

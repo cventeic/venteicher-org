@@ -13,8 +13,12 @@
 
   </md-card-header>
 
+  <div class="md-unstyled-image" *ngFor="let image of images">
+    <img [src]="image" >
+  </div>
 
   <md-card-content>
+
     <div [innerHTML]="contents"></div>
 
     <ng-container *ngFor="let hyperlink of hyperlinks">

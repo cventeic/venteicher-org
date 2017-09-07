@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   @Input() contents: Array<string> = [];
   @Input() tags: Array<string> = [];
   @Input() hyperlinks: Array<Hyperlink> = [];
+  @Input() images: Array<string> = [];
 
   constructor() { }
 
