@@ -213,11 +213,8 @@ export class AppComponent {
         `
         ],
         tags: [ 'project'],
-
-        hyperlinks: [
-
-        ],
-
+        videos: [ "https://www.youtube.com/embed/zzwA_C7NFoI" ],
+        hyperlinks: [ ],
       }),
 
 
@@ -243,9 +240,6 @@ export class AppComponent {
               <li> Basic shape rendering in Ruby code. </li>
               <li> Buffer management in Ruby. </li>
             </ul>
-
-            <a href="https://www.youtube.com/watch?v=_8pJCWOsiIo"> Video </a>
-
  `
         ],
         tags: [ 'project' ],
@@ -256,9 +250,8 @@ export class AppComponent {
             icons:["github-circle"],
             texts:["GitHub- opengl-ruby code "]
           }),
-
         ],
-
+        videos: [ "https://www.youtube.com/embed/_8pJCWOsiIo" ],
       }),
 
 

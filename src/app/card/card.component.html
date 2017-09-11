@@ -17,6 +17,10 @@
     <img [src]="image" >
   </div>
 
+  <div fxLayout="row" fxLayoutAlign="center center" class="md-unstyled" *ngFor="let video of videos">
+    <iframe width="560" height="315" [src]="this.sanitizer.bypassSecurityTrustResourceUrl(video)" frameborder="0" allowfullscreen> </iframe>
+  </div>
+
   <md-card-content>
 
     <div [innerHTML]="contents"></div>
