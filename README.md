@@ -14,10 +14,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 git clone https://github.com/cventeic/venteicher-org
 
+```
 cd venteicher-org
 yarn install
 yarn run build_all  `Build both normal content (dist) and universal server content (dist-server)`
 node server.js
+```
 
 ## Development server
 
